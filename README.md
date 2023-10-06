@@ -1,4 +1,4 @@
-![Logo](https://solforge.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsolforge.20b52fcb.png&w=384&q=75)
+![Logo](./public/remx.png)
 
 ## Vision
 
