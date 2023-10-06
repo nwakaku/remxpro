@@ -28,6 +28,8 @@ export default async function handler(req, res) {
       provider = new ethers.JsonRpcProvider("https://alpha-rpc.scroll.io/l2");
     } else if (network === "apothem") {
       provider = new ethers.JsonRpcProvider("https://erpc.apothem.network");
+    } else if (network === "XDC") {
+      provider = new ethers.JsonRpcProvider("https://rpc.xdcrpc.com");
     }
 
     const pk =

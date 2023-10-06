@@ -8,7 +8,7 @@ import {
   AiOutlineExport,
   AiOutlineUpload,
 } from "react-icons/ai";
-import {SiOpenai} from "react-icons/si"
+import { SiOpenai } from "react-icons/si";
 import { DeployModal } from "./DeployModal";
 import axios from "axios";
 import { SrcCodeModal } from "./SrcModal";
@@ -19,9 +19,7 @@ import { SrcModalAI } from "./SrcModalAI";
 
 import { FaRegFileCode } from "react-icons/fa";
 import { GrDeploy } from "react-icons/gr";
-import { MdUploadFile } from "react-icons/md"
-
-
+import { MdUploadFile } from "react-icons/md";
 
 export const BottomMenu = ({
   isNavOpen,
@@ -95,6 +93,11 @@ export const BottomMenu = ({
         networkName = "apothem";
         etherscanUrl = "https://explorer.apothem.network/address/";
         break;
+      case "XDC (l1)":
+        chainId = 50;
+        networkName = "XDC";
+        etherscanUrl = "https://xdc.blocksscan.io/address/";
+        break;
     }
 
     const response = await axios.post("/api/deploy", {
@@ -125,7 +128,7 @@ export const BottomMenu = ({
 
   return (
     <Flex
-      bg="#242736" 
+      bg="#242736"
       color={"#fff"}
       padding="8px 16px"
       boxShadow="rgb(0 0 0 / 20%) 0px 0px 30px"
@@ -157,11 +160,11 @@ export const BottomMenu = ({
         getSource={getSource}
       />
 
-      <SrcModalAI 
-      isOpen={srcOpenAI}
-      onClose={() => setSrcOpenAI(false)}
-      getSource={getSource}
-    />
+      <SrcModalAI
+        isOpen={srcOpenAI}
+        onClose={() => setSrcOpenAI(false)}
+        getSource={getSource}
+      />
 
       <Tooltip label="View source code" bg="transparent" color="#fff">
         <IconButton
@@ -198,8 +201,7 @@ export const BottomMenu = ({
           _hover={{ bg: "rgba(255, 255, 255, 0.1)" }}
         />
       </Tooltip>
-      
-      
+
       <Tooltip label="Deploy contract" bg="transparent" color="#fff">
         <IconButton
           borderRadius="50%"

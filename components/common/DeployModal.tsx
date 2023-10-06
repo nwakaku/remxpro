@@ -23,9 +23,7 @@ import { useState } from "react";
 const optionToLogo: any = {
   "ethereum (l1)": ethereumLogo,
   "polygon (l1)": polygonLogo,
-  "zksync era (l2)": zkSyncLogo,
-  "base (l2)": baseLogo,
-  "scroll (l2)": scrollLogo,
+  "XDC Mainnet (l1)": xdcLogo,
   "apothem (l1)": xdcLogo
 };
 
@@ -97,11 +95,9 @@ export const DeployModal = ({
   const [value, setValue] = useState("");
   const options = [
     "ethereum (l1)",
+    "apothem (l1)",
+    "XDC Mainnet (l1)",
     "polygon (l1)",
-    "zksync era (l2)",
-    "base (l2)",
-    "scroll (l2)",
-    "apothem (l1)"
   ];
 
   const { getRootProps, getRadioProps } = useRadioGroup({
