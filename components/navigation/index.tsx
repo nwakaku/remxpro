@@ -33,6 +33,7 @@ import { useOutput } from "@/hooks/useOutput";
 import { VariableIcon } from "../common/VariableIcon";
 import Image from "next/image";
 import logo from "../../public/remx.png";
+import Link from "next/link";
 
 const VariableTypes = [
   {
@@ -154,7 +155,9 @@ const StateVariables = () => {
   return (
     <Box mt={4}>
       <Flex mb={12}>
-        <Image src={logo} width="170" />
+        <Link href="/">
+          <Image src={logo} width="170" />
+        </Link>
       </Flex>
       <Flex justifyContent="space-between" alignItems="center" width="full">
         <Text
@@ -168,7 +171,7 @@ const StateVariables = () => {
           letterSpacing="0.1em"
           color="#fff"
         >
-         Variables
+          Variables
         </Text>
         <IconButton
           onClick={handleAddVariable}
@@ -251,11 +254,11 @@ const StateVariables = () => {
         >
           <ModalCloseButton />
           <ModalHeader color={"#fff"}>Add a variable</ModalHeader>
-          <ModalBody >
+          <ModalBody>
             <Flex direction="column">
               <Flex flex={1} mb={4}>
                 <Input
-                  w="300px" 
+                  w="300px"
                   color={"#fff"}
                   placeholder="Variable name"
                   onChange={handleInputChange}

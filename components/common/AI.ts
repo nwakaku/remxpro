@@ -14,7 +14,7 @@ export async function AI(srcCode:string): Promise<string> {
         messages: [
             {
                 role: 'system',
-                content: `(${srcCode}). explain the functions in this contract ,Write everything in a paragraph`,
+                content: `(${srcCode}). explain the functions in this contract in a paragraph(don't use colon or semi colon)`,
             },
         ],
         max_tokens: 200,

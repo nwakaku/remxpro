@@ -1,0 +1,68 @@
+/* RemixProLanding.module.css */
+.container {
+    background: linear-gradient(to right, #050710, 85%, #FFD700 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttonPrimary {
+    background-color: #ffdb58;
+    color: #2d3748;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    margin: 0 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buttonPrimary:hover {
+    background-color: #ffeb8c;
+    color: #2d3748;
+  }
+  
+  .buttonSecondary {
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    margin: 0 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .buttonSecondary:hover {
+    background-color: white;
+    color: #2d3748;
+    border-color: #2d3748;
+  }
+  
